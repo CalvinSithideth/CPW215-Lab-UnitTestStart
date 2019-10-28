@@ -6,6 +6,8 @@ namespace BusinessLogic
 {
     public class Course
     {
+        private string courseName;
+
         public Course(string courseName)
         {
             CourseName = courseName;
@@ -20,7 +22,17 @@ namespace BusinessLogic
         /// <summary>
         /// The name of the course
         /// </summary>
-        public string CourseName { get; set; }
+        public string CourseName
+        {
+            get
+            {
+                return courseName;
+            }
+            set
+            {
+                courseName = value;
+            }
+        }
 
         /// <summary>
         /// Number of credits for the course
