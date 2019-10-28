@@ -30,7 +30,14 @@ namespace BusinessLogic
             }
             set
             {
-                courseName = value;
+                if (value is null)
+                {
+                    throw new ArgumentNullException("Course name can not be null");
+                }
+                else
+                {
+                    courseName = value;
+                }
             }
         }
 
