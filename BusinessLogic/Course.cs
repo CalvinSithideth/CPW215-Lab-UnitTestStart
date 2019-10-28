@@ -7,6 +7,7 @@ namespace BusinessLogic
     public class Course
     {
         private string courseName;
+        private byte numberOfCredits;
 
         public Course(string courseName)
         {
@@ -44,7 +45,17 @@ namespace BusinessLogic
         /// <summary>
         /// Number of credits for the course
         /// </summary>
-        public byte NumberOfCredits { get; set; }
+        public byte NumberOfCredits
+        {
+            get
+            {
+                return numberOfCredits;
+            }
+            set
+            {
+                numberOfCredits = value;
+            }
+        }
 
     }
 }
