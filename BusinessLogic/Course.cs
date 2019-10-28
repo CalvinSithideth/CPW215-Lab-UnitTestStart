@@ -53,7 +53,14 @@ namespace BusinessLogic
             }
             set
             {
-                numberOfCredits = value;
+                if (value < 30 && value > 0)
+                {
+                    numberOfCredits = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Credits must be between 0 and 30 exclusive");
+                }
             }
         }
 
