@@ -9,6 +9,7 @@ namespace BusinessLogic
         public Course(string courseName)
         {
             CourseName = courseName;
+            InstructorName = "STAFF";
         }
 
         /// <summary>
